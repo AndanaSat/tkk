@@ -6,7 +6,9 @@ $id = $_GET['id'];
 $q  = mysqli_query($conn, "SELECT * FROM post WHERE id = {$id}") or die(mysqli_error($conn));
 $post = mysqli_fetch_array($q);
 
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
